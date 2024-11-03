@@ -1,1 +1,1 @@
-# high_shot_games.github.io
+# high_shot_games
