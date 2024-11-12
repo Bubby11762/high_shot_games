@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Apps</title>
+    <base href="/" />
+    <meta name="Description" content="Launch your ClassLink apps" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, maximum-scale=5, initial-scale=1"
+    />
+    <link
+      rel="icon"
+      id="favicon-placeholder"
+      type="image/x-icon"
+      href="favicon.ico"
+    />
+    <!-- ClassLink Stylesheet -->
+    <link
+      href="https://cdn.classlink.com/production/framework/stylesheets/clsheet-basic.css"
+      rel="stylesheet"
+    />
+    <!-- Open Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script defer src="https://cdn.classlink.com/production/framework/scripts/fontawesome-all-5.15.4.min.js"></script>
+    <script defer src="https://cdn.classlink.com/production/framework/scripts/fa-custom/fa6-minimal-1.3.js" data-style-default="regular"></script>
+    <!-- <script async src="assets/fa-dev.js"></script>-->
+    <link rel="manifest" id="manifest-placeholder" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.b41992b76fdf1d5c4636.css"></head>
+  <body class="/*cl-material*/">
+    <app-root></app-root>
+    <noscript
+      >Please enable JavaScript to continue using this application.</noscript
+    >
+  <script src="runtime.28cc73cdff71f6cb5a30.js" defer></script><script src="polyfills-es5.bf3eba7ca96082eac245.js" nomodule defer></script><script src="polyfills.a0af4ba499914bb989a4.js" defer></script><script src="main.f5c7f80560e2f87f36ba.js" defer></script></body>
+</html>
