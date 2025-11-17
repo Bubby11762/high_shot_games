@@ -1,25 +1,5 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Play Python</title>
-  </head>
-  <body>
-    <pre id="output"></pre>
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
-    <script>
-      async function run() {
-        const pyodide = await loadPyodide();
-        const code = await (await fetch("docs/games/index.html")).text();
-        pyodide.setStdout({ write: s => document.getElementById("output").textContent += s });
-        pyodide.setStderr({ write: s => document.getElementById("output").textContent += s });
-        await pyodide.runPythonAsync(code);
-      }
-      run();
-    </script>
-  </body>
-</html>
-
-
-
-
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to https://example.com/</title>
+<meta http-equiv="refresh" content="0; URL=https://bubby11762.github.io/high_shot_games/games/index.html">
+<link rel="canonical" href="https://bubby11762.github.io/high_shot_games/games/index.html">
