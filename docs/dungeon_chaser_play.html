@@ -10,7 +10,7 @@
     <script>
       async function run() {
         const pyodide = await loadPyodide();
-        const code = await (await fetch("docs/wordle.py")).text();
+        const code = await (await fetch("docs/main.py")).text();
         pyodide.setStdout({ write: s => document.getElementById("output").textContent += s });
         pyodide.setStderr({ write: s => document.getElementById("output").textContent += s });
         await pyodide.runPythonAsync(code);
@@ -19,5 +19,6 @@
     </script>
   </body>
 </html>
+
 
 
