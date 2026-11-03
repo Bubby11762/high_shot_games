@@ -1,6 +1,7 @@
 from threading import Thread
 import random
 import socket
+import os
 import time
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -9,11 +10,21 @@ client.connect(('127.0.0.1', 1234))
 name = input("Name: ")
 client.send(name.encode())
 
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+messages = [
+]
 def recieve_messages():
     while True:
         msg = client.recv(1024).decode()
-        if msg:
-            print(f"\n{msg}")
+        sender = msg.split(":", 1)
+        messages.append([msg, sender])
+        clear()
+        for msg in messages:
+            print(msg[0])
+        
 recv_msgs = Thread(target=recieve_messages)
 recv_msgs.start()
 
